@@ -39,7 +39,7 @@ if uploaded_file is not None:
     # (1) PLEASE source code HERE !
     prediction = model.predict(x)
     # (2) PLEASE source code HERE !
-    top_preds = decode_predictions(preds, top=3)[0]
+    top_preds = decode_predictions(prediction, top=3)[0]
 
     # 6. Show the result
     st.subheader("Predictions:")
